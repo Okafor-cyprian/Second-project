@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="webpage description">
+        <meta name="author" content="Vox">
+        <title>Music player</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="container">
+        <div class="music-player">
+            <div>
+                <img class="rotate-image" src="./assets/media/jack-harlow-chtkmy-art-680x455.jpg" alt="">
+                <h1>First Class</h1>
+                <p>Jack Harlow</p>
+            </div>
+            <div class="audio">
+                <audio id="song">
+                    <source src="./assets/media/Jack_Harlow_-_First_Class_CeeNaija.com_.mp3" type="audio/mp3">
+                </audio>
+                <input type="range" id="progress" value="0">
+            </div>
+            <div class="controls">
+                <div><i class="bi bi-rewind-fill"  id="rewindIcon"></i></div>
+                <div class="playPauseIcon"><i class="bi bi-play-fill" id="controlIcon"></i></div>
+                <div><i class="bi bi-fast-forward-fill" id="fastFowardIcon"></i></div>
+            </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+</html>
